@@ -1,6 +1,23 @@
 
+
 public class helloWorld {
+    
+    public class hanna {
+        private String abc = "avav";
+        
+        private hanna(String abc) {
+            this.abc = abc;
+        }
+        
+        private void out() {
+            System.out.println("inner class");
+        }
+    }
+
+    
     public static void main(String[] args) {
-        System.out.println("아 드디어 된다!");
+        helloWorld.hanna h = new helloWorld().new hanna("");
+        
+        h.out();
     }
 }
